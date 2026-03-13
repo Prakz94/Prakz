@@ -1,0 +1,83 @@
+<style>
+  /* This container perfectly centers everything on your page */
+  .math-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+  }
+
+  /* Styling for the new Mathematics title box */
+  .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff; 
+    background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%); 
+    padding: 20px 50px;
+    border-radius: 16px;
+    display: inline-block; 
+    margin-bottom: 30px; 
+    /* Base shadow */
+    box-shadow: 0 6px 20px rgba(255, 126, 95, 0.4); 
+    /* Smooth animation for the hover effect */
+    transition: box-shadow 0.4s ease, transform 0.4s ease; 
+  }
+
+  /* The subtle glow and lift when hovering over the title */
+  .section-title:hover {
+    box-shadow: 0 10px 30px rgba(255, 126, 95, 0.8);
+    transform: translateY(-3px);
+  }
+
+  .sweep-link {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 32px; 
+    font-weight: bold;
+    position: relative;
+    padding: 24px 60px; 
+    display: inline-block;
+    margin: 15px 20px; 
+    background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%); 
+    border-radius: 16px; 
+    z-index: 1;
+    overflow: hidden; 
+    box-shadow: 0 6px 20px rgba(161, 140, 209, 0.4); 
+    transition: box-shadow 0.4s ease;
+  }
+
+  .sweep-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+
+  .sweep-link:hover {
+    box-shadow: 0 8px 25px rgba(0, 201, 255, 0.5); 
+  }
+
+  .sweep-link:hover::before {
+    width: 100%;
+  }
+</style>
+
+<div class="math-container">
+
+  <div class="section-title">Mathematics</div>
+
+  <br>
+
+  <a href="https://notebooklm.google.com/notebook/892df9c6-4478-495c-8c32-3671eba0ddca?artifactId=6918caf8-5da8-433f-84f5-5a54e99fbdc2" class="sweep-link">
+    Profit and Loss
+  </a>
+
+  <a href="https://notebooklm.google.com/notebook/7752af4d-b4b2-491b-bd4e-9a23d83af5e1?artifactId=72f57de1-23f1-4ce5-a464-dcb061ba7aaf" class="sweep-link">
+    Ratio and Proportion
+  </a>
+
+</div>
