@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam Special TET CDP Notes - Chapter 1 Part 1</title>
+    <style>
+        /* Base Black and Gray Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222222; 
+            background-color: #ffffff; 
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px;
+            padding-top: 130px;
+        }
+
+        h1 {
+            color: #000000;
+            border-bottom: 3px solid #444444;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2, h3 {
+            color: #111111;
+            border-bottom: 2px solid #888888;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .note-box {
+            background-color: #f4f4f4; 
+            border-left: 6px solid #444444; 
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            position: relative;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        th, td { border: 1px solid #888888; padding: 12px; text-align: left; }
+        th { background-color: #e6e6e6; color: #111111; font-weight: bold; }
+
+        .qa-list { margin-bottom: 20px; padding-left: 20px; }
+        .qa-list li { margin-bottom: 15px; page-break-inside: avoid; position: relative; padding-right: 40px; }
+        .question { font-weight: bold; color: #000000; }
+        .answer { color: #333333; margin-top: 3px; display: block; background-color: #f9f9f9; padding: 5px 10px; border-left: 3px solid #888888; }
+
+        /* Floating Voice Controls Panel */
+        #voice-controls {
+            position: fixed;
+            top: 10px; right: 10px; left: 10px;
+            max-width: 830px; margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px); border: 2px solid #333;
+            padding: 12px; border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            z-index: 1000; display: flex; flex-direction: column; gap: 10px;
+        }
+
+        .controls-header {
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid #ddd; padding-bottom: 5px; font-weight: bold;
+        }
+
+        .load-btn {
+            background: #00d2ff; color: #000; border: 1px solid #008eb3;
+            padding: 6px 12px; border-radius: 20px; cursor: pointer; font-weight: bold;
+        }
+
+        #voice-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
+        .voice-chip {
+            background: #f0f0f0; border: 1px solid #bbb; padding: 6px 10px;
+            border-radius: 8px; font-size: 0.8rem; cursor: pointer; font-weight: bold; color: #333;
+        }
+        .voice-chip.active { background: #333; color: #fff; border-color: #000; }
+
+        .controls-footer { display: flex; gap: 15px; align-items: center; font-size: 0.85rem; font-weight: bold; }
+        .stop-btn { background: #ff4444; color: white; border: none; padding: 6px 15px; border-radius: 20px; cursor: pointer; margin-left: auto; }
+
+        .read-btn {
+            background: #e6e6e6; border: 1px solid #999; border-radius: 5px; padding: 5px 10px;
+            cursor: pointer; font-size: 0.85rem; margin-left: 10px; display: inline-flex;
+            align-items: center; gap: 5px; color: #000; font-weight: bold;
+        }
+        .qa-list .read-btn { position: absolute; right: 0; top: 0; margin: 0; }
+        .box-read-btn { position: absolute; top: 10px; right: 10px; }
+
+        .reading-highlight { background-color: #e6f7ff; outline: 2px solid #00d2ff; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div id="voice-controls">
+        <div class="controls-header">
+            <span>🔊 Raphael Study Audio</span>
+            <button class="load-btn" onclick="populateVoiceButtons()">↻ Load Google Voices</button>
+        </div>
+        
+        <div id="voice-buttons">
+            <span style="font-size: 0.85rem; color: #777;">System is ready. Click a Listen button below, or load voices here to pick a specific one.</span>
+        </div>
+
+        <div class="controls-footer">
+            <label>Speed:</label>
+            <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1" style="width: 100px;">
+            <span id="status-text" style="color: #008eb3; font-style: italic;">Ready</span>
+            <button class="stop-btn" onclick="stopReading()">⏹ Stop</button>
+        </div>
+    </div>
+
+    <h1>Chapter 1: Growth and Development (Part 1)</h1>
+
+    <div id="section-1">
+        <h2>1. Concept of Growth & Development <button class="read-btn" onclick="readSection('section-1')">🔊 Listen</button></h2>
+        <p><strong>Growth</strong> refers strictly to quantitative changes in an individual, such as an increase in height, weight, and overall physical size. Growth is not a lifelong process; it halts once an individual reaches physical maturity.</p>
+        <p><strong>Development</strong> is a broader, continuous process that encompasses both qualitative and quantitative changes. It involves the overall transformation of personality, abilities, emotional maturity, and logical thinking. Development is a lifelong journey that occurs continuously from conception (womb) to maturity and eventually death (tomb).</p>
+    </div>
+
+    <div id="section-2">
+        <h2>2. Difference Between Growth and Development <button class="read-btn" onclick="readSection('section-2')">🔊 Listen</button></h2>
+        <table>
+            <tr><th>Parameter</th><th>Growth</th><th>Development</th></tr>
+            <tr><td><strong>Nature</strong></td><td>Strictly Quantitative (measurable changes).</td><td>Qualitative and Quantitative (overall transformation).</td></tr>
+            <tr><td><strong>Continuity</strong></td><td>Stops after reaching maturity.</td><td>Continuous and lifelong (womb to tomb).</td></tr>
+            <tr><td><strong>Scope</strong></td><td>Narrow; it is only a part of the developmental process.</td><td>Broad; encompasses physical, cognitive, social, and emotional changes.</td></tr>
+        </table>
+    </div>
+
+    <div id="section-3">
+        <h2>3. Characteristics of Development <button class="read-btn" onclick="readSection('section-3')">🔊 Listen</button></h2>
+        <ul>
+            <li>It is a <strong>continuous process</strong> that never stops.</li>
+            <li>It follows a specific <strong>pattern and orderly sequence</strong>.</li>
+            <li>It moves step-by-step and involves both measurable (size) and unmeasurable (understanding) changes.</li>
+            <li>It is a complex product resulting from the interaction between <strong>heredity and environment</strong>.</li>
+        </ul>
+    </div>
+
+    <div id="section-4">
+        <h2>4. Aspects (Domains) of Development <button class="read-btn" onclick="readSection('section-4')">🔊 Listen</button></h2>
+        <p>Development occurs across several interrelated domains:</p>
+        <ul>
+            <li><strong>Physical:</strong> Involves changes in height, weight, and fine/gross motor skills.</li>
+            <li><strong>Mental/Cognitive:</strong> Involves changes in thinking, reasoning, problem-solving, and memory.</li>
+            <li><strong>Social:</strong> Involves socialization, making friends, peer relationships, and teamwork.</li>
+            <li><strong>Emotional:</strong> Involves expressing feelings and managing emotional maturity.</li>
+            <li><strong>Spiritual/Moral:</strong> Involves understanding values, distinguishing right from wrong, and ethical behavior.</li>
+        </ul>
+        
+        <div class="note-box" id="trick-1">
+            <button class="read-btn box-read-btn" onclick="readSection('trick-1')">🔊 Listen</button>
+            <p><strong>💡 Shortcut Trick to Remember Domains:</strong> Use the acronym <strong>P-M-E-S-S</strong> (Please Make Every Student Smile) to recall Physical, Mental, Emotional, Social, and Spiritual development.</p>
+        </div>
+    </div>
+
+    <div id="section-5">
+        <h2>5. Principles of Development <button class="read-btn" onclick="readSection('section-5')">🔊 Listen</button></h2>
+        <p>The developmental process is governed by fundamental principles:</p>
+        <ol>
+            <li><strong>Principle of Continuity:</strong> Development starts at conception and ends with death (womb to tomb).</li>
+            <li><strong>Principle of Direction:</strong> Development follows a predictable pattern.</li>
+            <li><strong>Principle of General to Specific:</strong> Children first exhibit general responses before learning specific movements.</li>
+            <li><strong>Principle of Individual Differences:</strong> Every child is unique; the rate of development varies.</li>
+            <li><strong>Principle of Interrelation:</strong> All aspects of development are completely interrelated.</li>
+            <li><strong>Principle of Spiral vs. Linear:</strong> Development is not a straight line. It advances, rests, and moves forward in a spiral.</li>
+            <li><strong>Principle of Interaction:</strong> Development is governed by heredity and environmental factors.</li>
+        </ol>
+
+        <div class="note-box" id="trick-2">
+            <button class="read-btn box-read-btn" onclick="readSection('trick-2')">🔊 Listen</button>
+            <p><strong>💡 Exam Memory Trick for Principles:</strong> Remember the phrase <strong>"Captain Peter Stops In India"</strong>.<br>
+            <strong>C</strong> = Cephalocaudal<br>
+            <strong>P</strong> = Proximodistal<br>
+            <strong>S</strong> = Specific to General<br>
+            <strong>I</strong> = Individual Differences<br>
+            <strong>I</strong> = Interrelation</p>
+        </div>
+    </div>
+
+    <div id="section-6">
+        <h2>6. 🧠 Psychologist Corner <button class="read-btn" onclick="readSection('section-6')">🔊 Listen</button></h2>
+        <ul>
+            <li><strong>Jean Piaget:</strong> Believed development happens in distinct stages. Children learn through active, hands-on experiences.</li>
+            <li><strong>Lev Vygotsky:</strong> Argued that cognitive development is primarily driven by social interactions, culture, and language.</li>
+            <li><strong>Similarities:</strong> Both are classified as Constructivists; learners actively construct knowledge.</li>
+        </ul>
+    </div>
+
+    <div id="section-7">
+        <h2>7. Core Concept Summary Table <button class="read-btn" onclick="readSection('section-7')">🔊 Listen</button></h2>
+        <table>
+            <tr><th>Key Concept</th><th>Summary Definition</th></tr>
+            <tr><td><strong>Cephalocaudal</strong></td><td>Development from head down to the toes.</td></tr>
+            <tr><td><strong>Proximodistal</strong></td><td>Development from the center of the body outward.</td></tr>
+            <tr><td><strong>Continuity</strong></td><td>Development never stops; spans a lifetime.</td></tr>
+            <tr><td><strong>Constructivism</strong></td><td>Learners build their own knowledge actively.</td></tr>
+        </table>
+    </div>
+
+    <h2>8. 20 Important ATET-Style Questions & Answers</h2>
+    <ol class="qa-list">
+        <li id="q1"><button class="read-btn" onclick="readSection('q1')">🔊</button> <span class="question">Q: The statement "Development is a never-ending process" is associated with which principle?</span> <span class="answer">A: Principle of Continuity.</span></li>
+        <li id="q2"><button class="read-btn" onclick="readSection('q2')">🔊</button> <span class="question">Q: Physical changes resulting in an increase in height and weight are termed as?</span> <span class="answer">A: Growth.</span></li>
+        <li id="q3"><button class="read-btn" onclick="readSection('q3')">🔊</button> <span class="question">Q: A child first gains control over their head, then arms. This illustrates which principle?</span> <span class="answer">A: Cephalocaudal Principle.</span></li>
+        <li id="q4"><button class="read-btn" onclick="readSection('q4')">🔊</button> <span class="question">Q: The Proximodistal trend of development dictates that development proceeds from:</span> <span class="answer">A: The center of the body to the extremities (outward).</span></li>
+        <li id="q5"><button class="read-btn" onclick="readSection('q5')">🔊</button> <span class="question">Q: Is human development purely a linear process?</span> <span class="answer">A: No, it is a spiral process.</span></li>
+        <li id="q6"><button class="read-btn" onclick="readSection('q6')">🔊</button> <span class="question">Q: Which is true regarding Growth and Development?</span> <span class="answer">A: Growth is quantitative, and Development involves both quantitative and qualitative changes.</span></li>
+        <li id="q7"><button class="read-btn" onclick="readSection('q7')">🔊</button> <span class="question">Q: A child learns to grasp a large ball before holding a pencil. Which principle is this?</span> <span class="answer">A: Principle of General to Specific responses.</span></li>
+        <li id="q8"><button class="read-btn" onclick="readSection('q8')">🔊</button> <span class="question">Q: Which domain of development includes problem-solving and memory?</span> <span class="answer">A: Cognitive (Mental) Development.</span></li>
+        <li id="q9"><button class="read-btn" onclick="readSection('q9')">🔊</button> <span class="question">Q: What two primary factors interact to determine a child's development?</span> <span class="answer">A: Heredity and Environment.</span></li>
+        <li id="q10"><button class="read-btn" onclick="readSection('q10')">🔊</button> <span class="question">Q: According to Lev Vygotsky, what is the primary driver of cognitive development?</span> <span class="answer">A: Social interaction and culture.</span></li>
+    </ol>
+
+    <script>
+        const synth = window.speechSynthesis;
+        let selectedVoice = null;
+        let currentlyHighlighting = null;
+        let availableVoices = [];
+
+        // 1. Generate Voice Buttons On-Demand
+        function populateVoiceButtons() {
+            document.getElementById('status-text').innerText = "Loading...";
+            
+            // This silent utterance forces Chrome to wake up its speech engine
+            const wakeUp = new SpeechSynthesisUtterance('');
+            wakeUp.volume = 0;
+            synth.speak(wakeUp);
+
+            setTimeout(() => {
+                availableVoices = synth.getVoices();
+                const btnContainer = document.getElementById('voice-buttons');
+                
+                if (availableVoices.length === 0) {
+                    btnContainer.innerHTML = '<span style="color:red;">Could not load voices. The standard system voice will be used.</span>';
+                    document.getElementById('status-text').innerText = "System Voice Ready";
+                    return;
+                }
+
+                // Filter for premium/Google voices, just like the Rimuru summary
+                let bestVoices = availableVoices.filter(v => v.name.includes('Google') || v.name.includes('Online') || v.name.includes('Premium'));
+                if(bestVoices.length === 0) bestVoices = availableVoices.slice(0, 10);
+                else bestVoices = bestVoices.slice(0, 10);
+
+                btnContainer.innerHTML = ''; 
+
+                bestVoices.forEach((voice, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'voice-chip';
+                    let shortLang = voice.lang.split('-')[1] || voice.lang;
+                    btn.innerText = `V${index + 1} (${shortLang})`;
+                    btn.title = voice.name;
+                    
+                    btn.onclick = () => {
+                        selectedVoice = voice;
+                        document.querySelectorAll('.voice-chip').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        document.getElementById('status-text').innerText = "Voice Set!";
+                    };
+                    btnContainer.appendChild(btn);
+                });
+
+                document.getElementById('status-text').innerText = "Voices Loaded!";
+            }, 300);
+        }
+
+        // 2. Playback Logic (The Rimuru Stable Method)
+        function readSection(elementId) {
+            stopReading(); 
+            
+            const element = document.getElementById(elementId);
+            if (!element) return;
+
+            element.classList.add('reading-highlight');
+            currentlyHighlighting = element;
+
+            const clone = element.cloneNode(true);
+            const buttons = clone.querySelectorAll('button');
+            buttons.forEach(b => b.remove()); 
+            
+            const textToRead = clone.innerText.trim();
+            if (!textToRead) return;
+
+            const utterance = new SpeechSynthesisUtterance(textToRead);
+            
+            // Dynamic Voice Assignment
+            if (selectedVoice) {
+                utterance.voice = selectedVoice;
+            } else {
+                // If user hasn't clicked a button yet, auto-hunt for a good voice
+                let currentVoices = synth.getVoices();
+                const autoVoice = currentVoices.find(voice => 
+                    voice.name.includes('Google US English') || 
+                    voice.name.includes('Female') || 
+                    voice.name.includes('UK English')
+                );
+                if (autoVoice) utterance.voice = autoVoice;
+            }
+            
+            utterance.rate = document.getElementById('rate').value;
+
+            utterance.onend = () => {
+                if (currentlyHighlighting) {
+                    currentlyHighlighting.classList.remove('reading-highlight');
+                    currentlyHighlighting = null;
+                }
+                document.getElementById('status-text').innerText = "Done";
+            };
+            utterance.onerror = (e) => {
+                if (currentlyHighlighting) currentlyHighlighting.classList.remove('reading-highlight');
+                document.getElementById('status-text').innerText = "Playback Interrupted";
+            };
+
+            document.getElementById('status-text').innerText = "Playing...";
+            synth.speak(utterance);
+        }
+
+        function stopReading() {
+            synth.cancel();
+            if (currentlyHighlighting) {
+                currentlyHighlighting.classList.remove('reading-highlight');
+                currentlyHighlighting = null;
+            }
+            document.getElementById('status-text').innerText = "Stopped";
+        }
+    </script>
+</body>
+</html>
