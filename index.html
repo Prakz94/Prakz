@@ -5,101 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assam Special TET CDP Notes - Chapter 1 Part 1</title>
     <style>
-        /* Base Black and Gray Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #222222; 
-            background-color: #ffffff; 
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 30px;
-            padding-top: 130px;
-        }
-
-        h1 {
-            color: #000000;
-            border-bottom: 3px solid #444444;
-            padding-bottom: 10px;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        h2, h3 {
-            color: #111111;
-            border-bottom: 2px solid #888888;
-            padding-bottom: 5px;
-            margin-top: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .note-box {
-            background-color: #f4f4f4; 
-            border-left: 6px solid #444444; 
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 4px 4px 0;
-            position: relative;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            page-break-inside: avoid;
-        }
-
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #222222; background-color: #ffffff; line-height: 1.6; max-width: 850px; margin: 0 auto; padding: 30px; padding-top: 150px; }
+        h1 { color: #000000; border-bottom: 3px solid #444444; padding-bottom: 10px; margin-top: 20px; text-align: center; }
+        h2, h3 { color: #111111; border-bottom: 2px solid #888888; padding-bottom: 5px; margin-top: 35px; display: flex; align-items: center; justify-content: space-between; }
+        .note-box { background-color: #f4f4f4; border-left: 6px solid #444444; padding: 15px 20px; margin: 20px 0; border-radius: 0 4px 4px 0; position: relative; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; page-break-inside: avoid; }
         th, td { border: 1px solid #888888; padding: 12px; text-align: left; }
         th { background-color: #e6e6e6; color: #111111; font-weight: bold; }
-
         .qa-list { margin-bottom: 20px; padding-left: 20px; }
         .qa-list li { margin-bottom: 15px; page-break-inside: avoid; position: relative; padding-right: 40px; }
         .question { font-weight: bold; color: #000000; }
         .answer { color: #333333; margin-top: 3px; display: block; background-color: #f9f9f9; padding: 5px 10px; border-left: 3px solid #888888; }
 
         /* Floating Voice Controls Panel */
-        #voice-controls {
-            position: fixed;
-            top: 10px; right: 10px; left: 10px;
-            max-width: 830px; margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px); border: 2px solid #333;
-            padding: 12px; border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-            z-index: 1000; display: flex; flex-direction: column; gap: 10px;
-        }
-
-        .controls-header {
-            display: flex; justify-content: space-between; align-items: center;
-            border-bottom: 1px solid #ddd; padding-bottom: 5px; font-weight: bold;
-        }
-
-        .load-btn {
-            background: #00d2ff; color: #000; border: 1px solid #008eb3;
-            padding: 6px 12px; border-radius: 20px; cursor: pointer; font-weight: bold;
-        }
-
+        #voice-controls { position: fixed; top: 10px; right: 10px; left: 10px; max-width: 830px; margin: 0 auto; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(5px); border: 2px solid #333; padding: 12px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); z-index: 1000; display: flex; flex-direction: column; gap: 10px; }
+        .controls-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ddd; padding-bottom: 5px; font-weight: bold; }
+        .load-btn { background: #00d2ff; color: #000; border: 1px solid #008eb3; padding: 6px 12px; border-radius: 20px; cursor: pointer; font-weight: bold; }
         #voice-buttons { display: flex; gap: 6px; flex-wrap: wrap; }
-        .voice-chip {
-            background: #f0f0f0; border: 1px solid #bbb; padding: 6px 10px;
-            border-radius: 8px; font-size: 0.8rem; cursor: pointer; font-weight: bold; color: #333;
-        }
+        .voice-chip { background: #f0f0f0; border: 1px solid #bbb; padding: 6px 10px; border-radius: 8px; font-size: 0.8rem; cursor: pointer; font-weight: bold; color: #333; }
         .voice-chip.active { background: #333; color: #fff; border-color: #000; }
-
         .controls-footer { display: flex; gap: 15px; align-items: center; font-size: 0.85rem; font-weight: bold; }
         .stop-btn { background: #ff4444; color: white; border: none; padding: 6px 15px; border-radius: 20px; cursor: pointer; margin-left: auto; }
 
-        .read-btn {
-            background: #e6e6e6; border: 1px solid #999; border-radius: 5px; padding: 5px 10px;
-            cursor: pointer; font-size: 0.85rem; margin-left: 10px; display: inline-flex;
-            align-items: center; gap: 5px; color: #000; font-weight: bold;
-        }
+        .read-btn { background: #e6e6e6; border: 1px solid #999; border-radius: 5px; padding: 5px 10px; cursor: pointer; font-size: 0.85rem; margin-left: 10px; display: inline-flex; align-items: center; gap: 5px; color: #000; font-weight: bold; }
         .qa-list .read-btn { position: absolute; right: 0; top: 0; margin: 0; }
         .box-read-btn { position: absolute; top: 10px; right: 10px; }
-
         .reading-highlight { background-color: #e6f7ff; outline: 2px solid #00d2ff; border-radius: 4px; }
+        
+        @media print { body { padding: 0; margin: 0; } #voice-controls, .read-btn { display: none; } }
     </style>
 </head>
 <body>
@@ -111,7 +44,7 @@
         </div>
         
         <div id="voice-buttons">
-            <span style="font-size: 0.85rem; color: #777;">System is ready. Click a Listen button below, or load voices here to pick a specific one.</span>
+            <span style="font-size: 0.85rem; color: #777;">System is ready. Click "Load Google Voices" to fetch premium cloud voices.</span>
         </div>
 
         <div class="controls-footer">
@@ -225,61 +158,87 @@
         <li id="q10"><button class="read-btn" onclick="readSection('q10')">🔊</button> <span class="question">Q: According to Lev Vygotsky, what is the primary driver of cognitive development?</span> <span class="answer">A: Social interaction and culture.</span></li>
     </ol>
 
+    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #888;">
+        <h3 id="end-chapter">End of Chapter 1 - Part 1 <button class="read-btn" onclick="readSection('end-chapter')">🔊</button></h3>
+    </div>
+
     <script>
         const synth = window.speechSynthesis;
         let selectedVoice = null;
         let currentlyHighlighting = null;
         let availableVoices = [];
 
-        // 1. Generate Voice Buttons On-Demand
+        // Fix for Android TTS getting "stuck"
+        synth.cancel(); 
+
         function populateVoiceButtons() {
-            document.getElementById('status-text').innerText = "Loading...";
+            const statusText = document.getElementById('status-text');
+            const btnContainer = document.getElementById('voice-buttons');
             
-            // This silent utterance forces Chrome to wake up its speech engine
+            btnContainer.innerHTML = '<span style="color:#008eb3; font-weight:bold;">Connecting to Cloud... please wait.</span>';
+            statusText.innerText = "Fetching...";
+            
+            // Wake up the engine
             const wakeUp = new SpeechSynthesisUtterance('');
             wakeUp.volume = 0;
             synth.speak(wakeUp);
 
-            setTimeout(() => {
+            let attempts = 0;
+
+            // The Patient Poller: Checks every 500ms, up to 10 times (5 seconds total)
+            function checkVoices() {
                 availableVoices = synth.getVoices();
-                const btnContainer = document.getElementById('voice-buttons');
                 
-                if (availableVoices.length === 0) {
-                    btnContainer.innerHTML = '<span style="color:red;">Could not load voices. The standard system voice will be used.</span>';
-                    document.getElementById('status-text').innerText = "System Voice Ready";
-                    return;
-                }
-
-                // Filter for premium/Google voices, just like the Rimuru summary
-                let bestVoices = availableVoices.filter(v => v.name.includes('Google') || v.name.includes('Online') || v.name.includes('Premium'));
-                if(bestVoices.length === 0) bestVoices = availableVoices.slice(0, 10);
-                else bestVoices = bestVoices.slice(0, 10);
-
-                btnContainer.innerHTML = ''; 
-
-                bestVoices.forEach((voice, index) => {
-                    const btn = document.createElement('button');
-                    btn.className = 'voice-chip';
-                    let shortLang = voice.lang.split('-')[1] || voice.lang;
-                    btn.innerText = `V${index + 1} (${shortLang})`;
-                    btn.title = voice.name;
+                if (availableVoices.length > 0) {
+                    // Voices found! 
+                    let bestVoices = availableVoices.filter(v => v.name.includes('Google') || v.name.includes('Online') || v.name.includes('Premium') || v.name.includes('Network'));
                     
-                    btn.onclick = () => {
-                        selectedVoice = voice;
-                        document.querySelectorAll('.voice-chip').forEach(b => b.classList.remove('active'));
-                        btn.classList.add('active');
-                        document.getElementById('status-text').innerText = "Voice Set!";
-                    };
-                    btnContainer.appendChild(btn);
-                });
+                    // If no cloud voices, fall back to whatever is there
+                    if(bestVoices.length === 0) bestVoices = availableVoices.slice(0, 10);
+                    else bestVoices = bestVoices.slice(0, 10);
 
-                document.getElementById('status-text').innerText = "Voices Loaded!";
-            }, 300);
+                    btnContainer.innerHTML = ''; 
+
+                    bestVoices.forEach((voice, index) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'voice-chip';
+                        let shortLang = voice.lang.split('-')[1] || voice.lang;
+                        btn.innerText = `V${index + 1} (${shortLang})`;
+                        btn.title = voice.name;
+                        
+                        btn.onclick = () => {
+                            selectedVoice = voice;
+                            document.querySelectorAll('.voice-chip').forEach(b => b.classList.remove('active'));
+                            btn.classList.add('active');
+                            statusText.innerText = "Voice Set!";
+                        };
+                        btnContainer.appendChild(btn);
+                    });
+
+                    // Auto-select the first voice
+                    if(bestVoices.length > 0) {
+                        selectedVoice = bestVoices[0];
+                        btnContainer.firstChild.classList.add('active');
+                    }
+                    
+                    statusText.innerText = "Voices Loaded!";
+                } else if (attempts < 10) {
+                    // Try again in half a second
+                    attempts++;
+                    setTimeout(checkVoices, 500);
+                } else {
+                    // If it still fails after 5 seconds
+                    btnContainer.innerHTML = '<span style="color:red;">Network timeout. Cloud voices could not be loaded. Standard voice will be used.</span>';
+                    statusText.innerText = "System Voice Ready";
+                }
+            }
+
+            // Start the polling
+            setTimeout(checkVoices, 500);
         }
 
-        // 2. Playback Logic (The Rimuru Stable Method)
         function readSection(elementId) {
-            stopReading(); 
+            synth.cancel(); 
             
             const element = document.getElementById(elementId);
             if (!element) return;
@@ -296,32 +255,29 @@
 
             const utterance = new SpeechSynthesisUtterance(textToRead);
             
-            // Dynamic Voice Assignment
             if (selectedVoice) {
                 utterance.voice = selectedVoice;
             } else {
-                // If user hasn't clicked a button yet, auto-hunt for a good voice
+                // Background hunt if they didn't load voices
                 let currentVoices = synth.getVoices();
                 const autoVoice = currentVoices.find(voice => 
                     voice.name.includes('Google US English') || 
-                    voice.name.includes('Female') || 
-                    voice.name.includes('UK English')
+                    voice.name.includes('Female')
                 );
                 if (autoVoice) utterance.voice = autoVoice;
+                else utterance.lang = 'en-IN'; // Ultimate Fallback
             }
             
             utterance.rate = document.getElementById('rate').value;
 
             utterance.onend = () => {
-                if (currentlyHighlighting) {
-                    currentlyHighlighting.classList.remove('reading-highlight');
-                    currentlyHighlighting = null;
-                }
-                document.getElementById('status-text').innerText = "Done";
+                if (currentlyHighlighting) currentlyHighlighting.classList.remove('reading-highlight');
+                document.getElementById('status-text').innerText = "Ready";
             };
+            
             utterance.onerror = (e) => {
                 if (currentlyHighlighting) currentlyHighlighting.classList.remove('reading-highlight');
-                document.getElementById('status-text').innerText = "Playback Interrupted";
+                document.getElementById('status-text').innerText = "Playback Error";
             };
 
             document.getElementById('status-text').innerText = "Playing...";
@@ -330,10 +286,7 @@
 
         function stopReading() {
             synth.cancel();
-            if (currentlyHighlighting) {
-                currentlyHighlighting.classList.remove('reading-highlight');
-                currentlyHighlighting = null;
-            }
+            if (currentlyHighlighting) currentlyHighlighting.classList.remove('reading-highlight');
             document.getElementById('status-text').innerText = "Stopped";
         }
     </script>
